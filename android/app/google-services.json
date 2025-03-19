@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "244144950020",
+    "project_id": "dating-app-627e7",
+    "storage_bucket": "dating-app-627e7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244144950020:android:df2787dc7196a61faede51",
+        "android_client_info": {
+          "package_name": "com.google.firebase.presents.dating_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOnZEfUILy6kNQWUEw2dKyUMYSDnfTVCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
