@@ -1,15 +1,19 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 class UnderlinedtextWgt extends StatelessWidget {
   final String text;
-  const UnderlinedtextWgt({required this.text, super.key});
+  final VoidCallback onTapped;
+
+  const UnderlinedtextWgt({
+    required this.text,
+    required this.onTapped,
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => log('onPress'),
+      onTap: onTapped,
       child: Text(
         text,
         // textAlign: textAlign,

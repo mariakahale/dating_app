@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:savethedate/ui/core/custombutton_wgt.dart';
 import 'package:savethedate/ui/core/underlinedtext_wgt.dart';
+import 'package:savethedate/ui/signup_main/signup_main_v.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:savethedate/ui/core/globals.dart';
 
@@ -20,13 +21,20 @@ class LandingScreen extends StatelessWidget {
                 image: AssetImage('assets/canva_logo_slim.png'),
               ),
               const SizedBox(height: 100),
-              CustombuttonWgt(text: "Tutorial", color: myRed),
+              CustombuttonWgt(
+                text: "Tutorial",
+                color: myRed,
+                onPressed: nothing,
+              ),
               const SizedBox(height: 40),
               Align(
                 alignment: Alignment.bottomRight,
                 child: Column(
                   children: [
-                    UnderlinedtextWgt(text: "Skip to login"),
+                    UnderlinedtextWgt(
+                      text: "Skip to login",
+                      onTapped: () => sendtoLoginScreen,
+                    ),
                     SizedBox(width: 150),
                   ],
                 ),
@@ -39,6 +47,6 @@ class LandingScreen extends StatelessWidget {
   }
 }
 
-void nothing() {
-  // This function does nothing
+void sendtoLoginScreen(BuildContext context) {
+  Navigator.push(context, MaterialPageRoute(builder: (_) => SignupMain()));
 }

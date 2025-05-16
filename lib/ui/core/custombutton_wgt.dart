@@ -1,20 +1,24 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:pressable_flutter/pressable_flutter.dart';
 
 class CustombuttonWgt extends StatelessWidget {
   final String text;
   final Color color;
+  final VoidCallback onPressed;
 
-  const CustombuttonWgt({super.key, required this.text, required this.color});
+  const CustombuttonWgt({
+    super.key,
+    required this.text,
+    required this.color,
+    required this.onPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Pressable(
       // effect: PressEffect.withSaturatedRipple(shrinkFactor: 0.8),
       duration: Duration(milliseconds: 40),
-      onPress: () => log('onPress'),
+      onPress: onPressed,
       child: Container(
         height: 50,
         width: 150,
