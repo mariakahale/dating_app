@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:savethedate/ui/signup_main/signup_main_v.dart';
 
 class UnderlinedtextWgt extends StatelessWidget {
   final String text;
@@ -13,7 +14,7 @@ class UnderlinedtextWgt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTapped,
+      onTap: () => sendtoLoginScreen,
       child: Text(
         text,
         // textAlign: textAlign,

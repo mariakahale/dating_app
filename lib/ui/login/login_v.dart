@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:savethedate/ui/core/buttonUnderlinedtext_wgt.dart';
 import 'package:savethedate/ui/core/custombutton_wgt.dart';
 import 'package:savethedate/ui/core/globals.dart';
-import 'package:savethedate/ui/core/underlinedtext_wgt.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -66,9 +66,9 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 40),
               Align(
                 alignment: Alignment.bottomRight,
-                child: UnderlinedtextWgt(
+                child: UnderlinedButton_wgt(
                   text: "Forgot password",
-                  onTapped: nothing,
+                  onPressed: nothing,
                 ),
               ),
             ],

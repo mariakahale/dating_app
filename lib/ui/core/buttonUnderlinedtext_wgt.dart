@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:pressable_flutter/pressable_flutter.dart';
 
-class CustombuttonWgt extends StatelessWidget {
+class UnderlinedButton_wgt extends StatelessWidget {
   final String text;
-  final Color color;
   final VoidCallback onPressed;
 
-  const CustombuttonWgt({
+  const UnderlinedButton_wgt({
     super.key,
     required this.text,
-    required this.color,
     required this.onPressed,
   });
 
@@ -22,17 +20,14 @@ class CustombuttonWgt extends StatelessWidget {
       child: Container(
         height: 50,
         width: 150,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: color,
-          // border: Border.all(color: greyColors.),
-        ),
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
         child: Center(
           child: Text(
             text,
             style: TextStyle(
-              color: Colors.white,
-              fontSize: 20,
+              color: Colors.grey,
+              decoration: TextDecoration.underline,
+              fontSize: 15,
               fontWeight: FontWeight.bold,
             ),
           ),
