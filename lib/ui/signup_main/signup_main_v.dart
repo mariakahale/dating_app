@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:savethedate/ui/core/custombutton_wgt.dart';
 import 'package:savethedate/ui/core/globals.dart';
 import 'package:savethedate/ui/login/login_v.dart';
+import 'package:savethedate/ui/signin/login/chatgptlogin.dart';
 
 class SignupMain extends StatelessWidget {
   const SignupMain({super.key});
@@ -25,15 +26,17 @@ class SignupMain extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const LoginScreen()),
+                  MaterialPageRoute(builder: (context) => const SigninScreen()),
                 );
               },
+              textcolor: Colors.white,
             ),
             const SizedBox(height: 30),
             CustombuttonWgt(
               text: "Sign up",
               color: Colors.grey,
               onPressed: nothing,
+              textcolor: Colors.white,
             ),
           ],
         ),

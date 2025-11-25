@@ -62,7 +62,12 @@ class LoginScreen extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(10, 15, 10, 15),
               ),
               SizedBox(height: 50),
-              CustombuttonWgt(text: "Login", color: myRed, onPressed: nothing),
+              CustombuttonWgt(
+                text: "Login",
+                color: myRed,
+                onPressed: nothing,
+                textcolor: Colors.white,
+              ),
               SizedBox(height: 40),
               Align(
                 alignment: Alignment.bottomRight,

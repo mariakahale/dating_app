@@ -5,12 +5,14 @@ class CustombuttonWgt extends StatelessWidget {
   final String text;
   final Color color;
   final VoidCallback onPressed;
+  final Color textcolor;
 
   const CustombuttonWgt({
     super.key,
     required this.text,
     required this.color,
     required this.onPressed,
+    required this.textcolor,
   });
 
   @override
@@ -21,7 +23,7 @@ class CustombuttonWgt extends StatelessWidget {
       onPress: onPressed,
       child: Container(
         height: 50,
-        width: 150,
+        width: 200,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: color,
@@ -31,9 +33,17 @@ class CustombuttonWgt extends StatelessWidget {
           child: Text(
             text,
             style: TextStyle(
-              color: Colors.white,
+              color: textcolor,
               fontSize: 20,
               fontWeight: FontWeight.bold,
+              // shadows: List.filled(
+              //   3,
+              //   Shadow(
+              //     color: Colors.black,
+              //     offset: Offset(0.5, 0.5),
+              //     blurRadius: 5,
+              //   ),
+              // ),
             ),
           ),
         ),
